@@ -18,7 +18,7 @@ import org.vaadin.leif.headertags.MetaTags;
 import com.vaadin.annotations.JavaScript;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
-import com.vaadin.data.util.BeanItemContainer;
+import com.vaadin.annotations.Widgetset;
 import com.vaadin.server.RequestHandler;
 import com.vaadin.server.ServiceException;
 import com.vaadin.server.SessionInitEvent;
@@ -27,9 +27,10 @@ import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinResponse;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.server.VaadinSession;
-import com.vaadin.ui.Grid;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.renderers.ImageRenderer;
+import com.vaadin.v7.data.util.BeanItemContainer;
+import com.vaadin.v7.ui.Grid;
+import com.vaadin.v7.ui.renderers.ImageRenderer;
 
 /**
  * This UI is the application entry point. A UI may either represent a browser window 
@@ -45,6 +46,7 @@ import com.vaadin.ui.renderers.ImageRenderer;
 	@Meta(name="theme-color", content="#404549")
 })
 @Link(rel="manifest", href="VAADIN/manifest.json")
+@Widgetset("com.vaadin.v7.Vaadin7WidgetSet")
 public class MyUI extends UI {
 
     @Override

@@ -3,7 +3,7 @@ var CACHE_VERSION = 1;
 
 var filesToCache = [
   './',
-  './VAADIN/themes/mytheme/styles.css?v=7.7.6',
+  './VAADIN/themes/mytheme/styles.css?v=8.3.3',
   './VAADIN/js/app.js',
   './VAADIN/images/vaadinlogo-192x192.png'
 ];
